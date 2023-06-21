@@ -37,28 +37,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onClickSumar(View view){
         if(!emptyField(num1, num2)){
             OperacionesMat mt = new OperacionesMat (Integer.parseInt(num1.getText().toString()), Integer.parseInt(num2.getText().toString()));
-            openActivity("EL RESULTADO DE LA SUMA ES:", mt.suma());
+            openActivity("RESULTADO:", mt.suma());
         }else message("Debe llenar los campos");
     }
 
     protected void onClickRestar(View view){
         if(!emptyField(num1, num2)) {
             OperacionesMat mt = new OperacionesMat(Integer.parseInt(num1.getText().toString()), Integer.parseInt(num2.getText().toString()));
-            openActivity("EL RESULTADO DE LA RESTA ES:", mt.resta());
+            openActivity("RESULTADO:", mt.resta());
         }else message("Debe llenar los campos");
     }
 
     protected void onClickMulti(View view){
         if(!emptyField(num1, num2)) {
             OperacionesMat mt = new OperacionesMat(Integer.parseInt(num1.getText().toString()), Integer.parseInt(num2.getText().toString()));
-            openActivity("EL RESULTADO DE LA MULTIPLICACIÓN ES:", mt.multiplicacion());
+            openActivity("RESULTADO:", mt.multiplicacion());
         }else message("Debe llenar los campos");
     }
 
     protected void onClickDivi(View view){
         if(!emptyField(num1, num2)) {
             OperacionesMat mt = new OperacionesMat(Integer.parseInt(num1.getText().toString()), Integer.parseInt(num2.getText().toString()));
-            openActivity("EL RESULTADO DE LA DIVISIÓN ES:", mt.division());
+            openActivity("RESULTADO:", mt.division());
         }else message("Debe llenar los campos");
     }
 
